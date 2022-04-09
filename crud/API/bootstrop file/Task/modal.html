@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=3"/>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+</head>
+<style>
+
+</style>
+<body>
+<div class="container">
+<form>
+<div class="row">
+<div class="col-sm-12">
+
+<a href="#" class="btn btn-outline-primary m-5 fs-2" data-bs-toggle="modal" data-bs-target="#box">CLICK ME</a>
+<!--start modal -->
+
+<!-- Button trigger modal -->
+ <div class="modal fade" id="box">
+  <div class="modal-dialog modal-content">
+    <div class="modal-header bg-warning text-light">
+      <h5 class="modal-title fs-3" id="box">LOGIN FORM...</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      Name<br/><input type="text" placeholder="Enter your Name" required class="form-control border border-1 border-warning mb-2"/>
+	  Mobile<br/><input type="number" placeholder="Enter your Number" required class="form-control border border-1 border-warning mb-2"/>
+	   Email<br/><input type="email" required placeholder="Enter your Email" class="form-control border border-1 border-warning mb-2"/>
+	    Date Of Birth<br/><input type="date" required class="form-control border border-1 border-warning mb-2"/>
+	   Upload File<br/><input type="file" required class="form-control border border-1 border-warning mb-2"/>
+        Password<br/><input type="password" required placeholder="Enter your Password" class="form-control border border-1 border-warning mb-2"/>
+		Confirm-Password<br/><input type="password" required placeholder="Enter your Password" class="form-control border border-1 border-warning mb-2"/>
+		<input type="submit" value="LOGIN" class="btn btn-outline-warning"/>
+      </div>
+  </div>
+  </div>
+<!--end modal -->
+</div>
+</div>
+</form>
+</div>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

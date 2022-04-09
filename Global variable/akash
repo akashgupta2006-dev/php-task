@@ -1,0 +1,52 @@
+<?php
+echo 'This is Akash gupta terminal  here';
+echo PHP_EOL;
+echo 'The Akash Framework : Version 1.x';
+echo PHP_EOL;
+$commands=[
+'--help' => 'This is help command',
+'--v' => '1.x',
+'--a'=>'for Addistion',
+'--s'=>'for substraction',
+'--m'=>'for multiplication',
+'--d'=>'for division',
+'--r'=>'for reminder'
+
+];
+forEach($commands as $key => $value)
+{
+printf("%s\t:\t%s\n",$key,$value);
+
+}
+$output='';
+if(isset($argv[1]))
+{
+
+$command=$argv[1];
+echo "\e[H\e[J";
+switch($command)
+{
+case '--v':
+	$output='1.x';
+	break;
+	case '--a':
+		$x = readline('Enter a number1 : ');
+		$y = readline('Enter a number2 : ');
+		$output=$x+$y;
+		break;
+	default:
+		$output='Invalid Command Supplied';
+		break;
+		}
+		
+		}
+		echo $output;
+?>
+
+
+
+
+
+
+
+

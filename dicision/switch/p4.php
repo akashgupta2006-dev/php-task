@@ -1,0 +1,15 @@
+<?php
+// wap in php to show odd and even using switch
+
+$x=readline("Enter the value : ");
+switch($x%2)
+{
+case 0:
+echo "$x is even";
+break;
+
+default:
+	echo "$x is odd";
+	break;
+}
+?>

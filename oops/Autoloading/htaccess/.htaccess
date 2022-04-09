@@ -1,0 +1,12 @@
+RewriteEngine on
+options -Indexes
+DirectoryIndex about.php
+RewriteRule ^(home.aspx)$ home.php
+ErrorDocument 404 http://localhost:786/app-2021/oops/Autoloading/htaccess/404.php
+IndexIgnore public_html
+
+
+setEnv DB_HOST localhost:3308
+setEnv DB_USER root
+setEnv DB_PASSWORD
+setEnv DB_NAME app2021
